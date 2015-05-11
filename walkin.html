@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>HIDEO HTML5, CSS3, responsive, Bootstrap 3 website template</title>
+	<meta name="description" content="HIDEO is a One Page Bootstrap 3 Premium website Template, using nice Paralax effect, HTML5, CSS3 and Twitter Bootstrap 3">
+	<meta name="author" content="Little NEKO">
+<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- CSS
+	================================================== -->
+	<!-- Bootstrap  -->
+	<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<!-- web font  -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
+	<!-- plugin css  -->
+	<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css">
+	<!-- Pop up-->
+	<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css">
+	<!-- Owl carousel-->
+	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.css">
+	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.css">
+	<!-- icon fonts -->
+	<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
+	<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+	<!-- Custom css -->
+	<link type="text/css" rel="stylesheet" href="css/layout.css">
+	<link type="text/css" id="colors" rel="stylesheet" href="css/colors.css">
+	<link type="text/css" rel="stylesheet" href="css/custom.css">
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<script src="js/modernizr-2.6.1.js"></script>
+<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+	<script>
+	$(document).on('change', '.btn-file :file', function() {
+  var input = $(this),
+      numFiles = input.get(0).files ? input.get(0).files.length : 1,
+      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+  input.trigger('fileselect', [numFiles, label]);
+});
+
+$(document).ready( function() {
+    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
+        
+        var input = $(this).parents('.input-group').find(':text'),
+            log = numFiles > 1 ? numFiles + ' files selected' : label;
+        
+        if( input.length ) {
+            input.val(log);
+        } else {
+            if( log ) alert(log);
+        }
+        
+    });
+});
+	</script>
+</head>
+<body>
+<!-- Primary Page Layout 
+	================================================== -->
+	<!-- globalWrapper -->
+	<div id="globalWrapper">
+		<header class="navbar-fixed-top">
+			<!-- pre header -->
+			<div id="preHeader" class="hidden-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-8">
+							<ul class="quickMenu">
+								<li>Contact us on +91 94-87-664083 & +91 41-46-222083 or contact@jeevikaacademy.com</li>
+							</ul>
+						</div>
+						<div class="col-xs-4">
+							<div id="contactBloc" class="clearfix">
+								<!-- social icons -->
+								<ul class="socialNetwork">
+									<li><a href="https://facebook.com/jeevikaacademy" class="tips" title="follow me on Facebook"> <i class="icon-facebook-1"></i></a></li>
+									<li> <a href="https://twitter.com/jeevikaacademy" class="tips" title="follow me on Twitter"> <i class="icon-twitter-bird"></i> </a> </li>
+									<li>
+										<a href="https://plus.google.com/u/1/100299097122660492892/posts" class="tips" title="follow me on Google+">
+											<i class="icon-gplus-1"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://in.linkedin.com/pub/jeevika-academy/a3/892/9b" class="tips" title="follow me on Linkedin">
+											<i class="icon-linkedin-1"></i>
+										</a>
+									</li>
+									<li>
+									<!-- social icons -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- pre header -->		
+			<!-- header -->
+			<div id="mainHeader" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+							<!-- responsive navigation -->
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- Logo -->
+							<a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="Jeevika Academy"></a>
+						</div>
+						<div class="collapse navbar-collapse" id="mainMenu">
+							<!-- Main navigation -->
+							<ul class="nav navbar-nav pull-right">
+
+								<li class="primary">
+									<a href="index.html" class="firstLevel active hasSubMenu">Home</a>
+								</li>
+
+								<li class="sep"></li>
+
+								<li class="primary"> 
+									<a href="features-neko-shortcodes.html" class="firstLevel">About Us</a>
+								</li>
+
+								<li class="sep"></li>
+
+								<li class="primary nekoMegaMenuTrigger">
+									<a href="#" class="firstLevel hasSubMenu">Courses</a>
+
+									<div class="nekoMegaMenu subMenu">
+										<div class="container">	
+											<div class="row">
+												<div class="col-sm-2">
+													<div class="megaInner">
+														<h2>Students</h2>
+														<ul>
+															<li><a href="index.html">Default</a></li>
+															<li><a href="home1.html">Revolution Slider</a></li>
+															<li><a href="home2.html">Revolution Slider 2</a></li>
+															<li><a href="home3.html">Camera Slider</a></li>
+															<li><a href="home8.html">Fullscreen Slider</a></li>
+															<li><a href="home4.html">Blog style</a></li>
+															<li><a href="home7.html">No Slider</a></li>
+															<li><a href="index-one-page.html">One page</a></li>
+														</ul>
+													</div>
+													
+												</div>
+												<div class="col-sm-3">
+													<div class="megaInner">
+														<h2>Professionals</h2>
+														<ul>
+															<li><a href="index.html">Default</a></li>
+															<li><a href="home1.html">Revolution Slider</a></li>
+															<li><a href="home2.html">Revolution Slider 2</a></li>
+															<li><a href="home3.html">Camera Slider</a></li>
+															<li><a href="home8.html">Fullscreen Slider</a></li>
+															<li><a href="home4.html">Blog style</a></li>
+															<li><a href="home7.html">No Slider</a></li>
+															<li><a href="index-one-page.html">One page</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-sm-2">
+													<div class="megaInner">
+														<h2>Graduate</h2>
+														<ul>
+															<li><a href="template-menu-left.html">Menu left</a></li>
+															<li><a href="template-sidebar-right.html">Sidebar right</a></li>
+															<li><a href="template-2-sidebars.html">2 sidebars</a></li>
+															<li><a href="template-contact.html">Contact</a></li>
+															<li><a href="template-full-width.html">Full width</a></li>
+															<li><a href="template-plans.html">Our plans</a></li>
+															<li><a href="template-about.html">About us</a></li>
+															<li><a href="template-team.html">Our team</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-sm-3">
+													<div class="megaInner">
+														<h2>Institute</h2>
+														<ul>
+															<li><a href="template-menu-left.html">Menu left</a></li>
+															<li><a href="template-sidebar-right.html">Sidebar right</a></li>
+															<li><a href="template-2-sidebars.html">2 sidebars</a></li>
+															<li><a href="template-contact.html">Contact</a></li>
+															<li><a href="template-full-width.html">Full width</a></li>
+															<li><a href="template-plans.html">Our plans</a></li>
+															<li><a href="template-about.html">About us</a></li>
+															<li><a href="template-team.html">Our team</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-sm-2">
+													<div class="megaInner">
+														<h2>Entreprice</h2>
+														<ul>
+															<li><a href="template-menu-left.html">Menu left</a></li>
+															<li><a href="template-sidebar-right.html">Sidebar right</a></li>
+															<li><a href="template-2-sidebars.html">2 sidebars</a></li>
+															<li><a href="template-contact.html">Contact</a></li>
+															<li><a href="template-full-width.html">Full width</a></li>
+															<li><a href="template-plans.html">Our plans</a></li>
+															<li><a href="template-about.html">About us</a></li>
+															<li><a href="template-team.html">Our team</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</li>
+
+								<li class="sep"></li>
+
+								<li class="primary">
+									<a href="template-menu-left.html" class="firstLevel hasSubMenu">Solutions</a>
+									<ul class="subMenu">
+										<li><a href="template-menu-left.html">Web Development</a></li>
+										<li><a href="template-sidebar-right.html">Software Devepment</a></li>
+										<li><a href="template-2-sidebars.html">Software Maintanance</a></li>
+										<li><a href="template-contact.html">Academic Projects</a></li>
+									</ul>
+								</li>
+
+								<li class="sep"></li>
+
+								<li class="primary">
+									<a href="portfolio-masonery.html" class="firstLevel hasSubMenu">Job Portal</a>
+									<ul class="subMenu">
+										<li><a href="portfolio-masonery.html">Upload Resume</a></li>
+										<li class="dropdownSubmenu">
+											<a href="portfolio-project-image.html">Career at Jeevika</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="sep"></li>
+								<li class="primary">
+									<a href="blog-home-sidebar-right.html" class="firstLevel hasSubMenu">Blog</a>
+									<ul class="subMenu">
+										<li class="last"><a href="blog-post.html" class="last">Post</a></li>
+									</ul>
+								</li>
+								<li class="sep"></li>
+								<li id="lastMenu" class="last"><a href="template-contact.html" class="firstLevel last">Contact</a></li>
+							</ul>
+							<!-- End main navigation -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- header -->
+		<!-- ======================================= content ======================================= -->
+		<section id="page">
+			<header class="page-header walkin">
+				<div class="container walkin">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Walk-in Registration</h1>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section id="content" class="mt30">
+				<div class="container">
+					<div class="row">
+						<form method="post" action="js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
+							<div class="col-sm-4"> 
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
+								</div>
+								<div class="form-group">
+									<label for="email">Email ID</label>
+									<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
+								</div>
+								<div class="form-group">
+									<label for="phone">Contact Number</label>
+									<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter email phone" title="Please enter a valid phone number (at least 10 characters)">
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label for="name">Linked In</label>
+									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
+								</div>
+								<div class="form-group">
+									<label for="name">IT Experience (In months)</label>
+									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
+								</div>
+								<div class="form-group">
+									<label for="name">Upload Your Profile</label>
+									<div class="input-group">
+										<span class="input-group-btn">
+											<span class="btn btn-primary btn-file">
+												<i class="glyphicon glyphicon-folder-open"></i>
+												<input type="file" multiple>
+											</span>
+										</span>
+										<input type="text" class="form-control" readonly>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label for="comments">Comments</label>
+									<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+								</div>
+								<fieldset class="clearfix securityCheck">
+									<h3>Security</h3>
+									<div class="form-group">
+										<img src="js-plugin/neko-contact-ajax-plugin/php/image.php" alt="Image verification">
+										<input class="required form-control" id="verify" name="verify" type="text">
+									</div>
+								</fieldset>
+							</div>  							
+							<div class="col-md-8 col-md-offset-4">
+								<div class="result"></div>
+								<button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+			</section>
+		</section>
+		<!-- content -->
+		<!-- footer -->
+		<footer id="footerWrapper">
+			<section id="mainFooter">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="footerWidget">
+									<img src="images/neko-logo.png" alt="latest Little Neko news" id="footerLogo">
+									<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Little Neko</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
+								</div>
+							</div>
+
+							<div class="col-sm-3">
+								<div class="footerWidget">
+
+									<h3>Jeevika Academy</h3>
+									<address>
+										<p>
+											<i class="icon-location"></i>&nbsp;#111, Trichy main Road<br>
+											Opp.Solai Mahal, Villupuram <br>
+											<i class="icon-phone"></i>&nbsp;+91 94-87-664083<br>
+											<i class="icon-phone"></i>&nbsp;+91 41-46-222083<br>
+											<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">contact@jeevikaacademy.com</a>
+										</p>
+									</address>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="footerWidget">
+										<h3>Follow us, we are social</h3>
+										<ul class="socialNetwork">
+									<li><a href="#" class="tips" title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+									<li><a href="#" class="tips" title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
+									<li><a href="#" class="tips" title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+									<li><a href="#" class="tips" title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+									<li><a href="#" class="tips" title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
+								</ul>     
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</section>
+
+				<section id="footerRights">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<p>Copyright © 2012 <a href="http://www.little-neko.com" target="blank">Little NEKO</a> / All rights reserved.</p>
+							</div>
+
+						</div>
+					</div>
+				</section>
+			</footer>
+			<!-- End footer -->
+		</div>
+		<!-- global wrapper -->
+<!-- End Document 
+	================================================== -->
+	<script type="text/javascript" src="js-plugin/respond/respond.js"></script>
+	<script type="text/javascript" src="js-plugin/jquery/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.js"></script>
+	<!-- third party plugins  -->
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.js"></script>
+	<!-- carousel -->
+	<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.js"></script>
+	<!-- pop up -->
+	<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.js"></script>
+	<!-- form -->
+	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.js"></script>
+	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.js"></script>
+	<!-- Custom  -->
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
