@@ -31,7 +31,7 @@
 ================================================== */
 
 /** tabs and accordion**/
-
+.size-72 { font-size: 72px; }
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {background:#3d3d3d;}
 .nav-tabs > li > a {border-left:1px dashed #eee; border-top:1px dashed #eee; border-right:1px dashed #eee;}
 
