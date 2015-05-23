@@ -10,7 +10,7 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<title>HIDEO HTML5, CSS3, responsive, Bootstrap 3 website template</title>
-	<meta name="description" content="HIDEO is a One Page Bootstrap 3 Premium website Template, using nice Paralax effect, HTML5, CSS3 and Twitter Bootstrap 3">
+	<meta name="description" content="HIDEOe is a One Page Bootstrap 3 Premium website Template, using nice Paralax effect, HTML5, CSS3 and Twitter Bootstrap 3">
 	<meta name="author" content="Little NEKO">
 <!-- Mobile Specific Metas
 	================================================== -->
@@ -18,55 +18,32 @@
 <!-- CSS
 	================================================== -->
 	<!-- Bootstrap  -->
-	<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="bootstrap\css\bootstrap.css">
 	<!-- web font  -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
 	<!-- plugin css  -->
-	<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css">
+	<link rel="stylesheet" type="text/css" href="js-plugin\animation-framework\animate.css">
 	<!-- Pop up-->
-	<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="js-plugin\magnific-popup\magnific-popup.css">
 	<!-- Owl carousel-->
-	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.css">
-	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.css">
+	<link rel="stylesheet" href="js-plugin\owl.carousel\owl-carousel\owl.css">
+	<link rel="stylesheet" href="js-plugin\owl.carousel\owl-carousel\owl.css">
 	<!-- icon fonts -->
-	<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
-	<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+	<link type="text/css" rel="stylesheet" href="font-icons\custom-icons\css\custom-icons.css">
+	<link type="text/css" rel="stylesheet" href="font-icons\custom-icons\css\custom-icons-ie7.css">
 	<!-- Custom css -->
-	<link type="text/css" rel="stylesheet" href="css/layout.css">
-	<link type="text/css" id="colors" rel="stylesheet" href="css/colors.css">
-	<link type="text/css" rel="stylesheet" href="css/custom.css">
+	<link type="text/css" rel="stylesheet" href="css\layout.css">
+	<link type="text/css" id="colors" rel="stylesheet" href="css\colors.css">
+	<link type="text/css" rel="stylesheet" href="css\custom.css">
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-	<script src="js/modernizr-2.6.1.js"></script>
+	<script src="js\modernizr-2.6.1.js"></script>
 <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
-	<script>
-	$(document).on('change', '.btn-file :file', function() {
-  var input = $(this),
-      numFiles = input.get(0).files ? input.get(0).files.length : 1,
-      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-  input.trigger('fileselect', [numFiles, label]);
-});
-
-$(document).ready( function() {
-    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
-        
-        var input = $(this).parents('.input-group').find(':text'),
-            log = numFiles > 1 ? numFiles + ' files selected' : label;
-        
-        if( input.length ) {
-            input.val(log);
-        } else {
-            if( log ) alert(log);
-        }
-        
-    });
-});
-	</script>
+	<link rel="shortcut icon" href="images\favicon.ico">
+	<link rel="apple-touch-icon" href="images\apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images\apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images\apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images\apple-touch-icon-144x144.png">
 </head>
 <body>
 <!-- Primary Page Layout 
@@ -293,76 +270,165 @@ $(document).ready( function() {
 		<!-- header -->
 		<!-- ======================================= content ======================================= -->
 		<section id="page">
-			<header class="page-header walkin">
-				<div class="container walkin">
+			<header class="page-header bigHeader noBorder color2">
+				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<h1>Walk-in Registration</h1>
+						<div class="col-sm-12">
+							<h1 class="bigTitle text-center noMargin">We worked for them</h1>
+							<h2 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</h2>
+						</div>
+						<div class="col-sm-12"> <img src="images\theme-pics\screens-demo.png" alt="HIDEOe, Bootstrap website template" class="img-responsive">
 						</div>
 					</div>
 				</div>
 			</header>
-			<section id="content" class="mt30">
-				<div class="container">
-					<div class="row">
-						<form method="post" action="js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
-							<div class="col-sm-4"> 
-								<div class="form-group">
-									<label for="name">Name</label>
-									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-								</div>
-								<div class="form-group">
-									<label for="email">Email ID</label>
-									<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-								</div>
-								<div class="form-group">
-									<label for="phone">Contact Number</label>
-									<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter email phone" title="Please enter a valid phone number (at least 10 characters)">
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="form-group">
-									<label for="name">Linked In</label>
-									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-								</div>
-								<div class="form-group">
-									<label for="name">IT Experience (In months)</label>
-									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-								</div>
-								<div class="form-group">
-									<label for="name">Upload Your Profile</label>
-									<div class="input-group">
-										<span class="input-group-btn">
-											<span class="btn btn-primary btn-file">
-												<i class="glyphicon glyphicon-folder-open"></i>
-												<input type="file" multiple>
-											</span>
-										</span>
-										<input type="text" class="form-control" readonly>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="form-group">
-									<label for="comments">Comments</label>
-									<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-								</div>
-								<fieldset class="clearfix securityCheck">
-									<h3>Security</h3>
-									<div class="form-group">
-										<img src="js-plugin/neko-contact-ajax-plugin/php/image.php" alt="Image verification">
-										<input class="required form-control" id="verify" name="verify" type="text">
-									</div>
-								</fieldset>
-							</div>  							
-							<div class="col-md-8 col-md-offset-4">
-								<div class="result"></div>
-								<button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
-							</div>
-						</form>
-					</div>
-				</div>
+			<section id="content">
 				
+				<section id="testimonials" class="pt40 pb40">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<article class="row">
+									<div class="col-sm-5 mb15">
+										<img src="images\theme-pics\woman.jpg" alt="" class="img-responsive">
+									</div>
+									
+									<div class="col-sm-7">
+										<div class="boxTestimonial">
+											<blockquote>
+												The templates you made look wonderful and have a wide range of options. Thanks for writing such comprehensive templates.
+											</blockquote>
+										</div>
+									</div>
+
+								</article>
+								
+							</div>
+							<div class="col-md-6">
+								<h2>That's what she said!</h2>
+								<p>This did not seem to encourage the witness at all: he kept shifting from one foot to the other, looking uneasily at the Queen, and in his confusion he bit a large piece out of his teacup instead of the bread-and-butter.
+								</p>
+								<p>
+									Just at this moment Alice felt a very curious sensation, which puzzled her a good deal until she made out what it was: she was beginning to grow larger again, and she thought at first she would get up and leave the court; but on second thoughts she decided to remain where she was as long as there was room for her.
+								</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row mt30">
+
+							<div class="col-md-6 mb30">
+								<h2>More than 1800 happy clients!</h2>
+								<p>This did not seem to encourage the witness at all: he kept shifting from one foot to the other, looking uneasily at the Queen, and in his confusion he bit a large piece out of his teacup instead of the bread-and-butter.
+								</p>
+								<ul class="iconList list-unstyled">
+									<li>Choose your color scheme</li>
+									<li>Choose from 6 header styles</li>
+									<li>Choose your slider</li>
+									<li>Choose your pages templates</li>
+									<li>Mix and match templates section</li>
+									<li>Enhance your content with tons of features</li>
+								</ul>
+
+							</div>
+
+							<div class="col-md-6">
+								<section class="owl-carousel nekoDataOwl" data-neko_items="1" data-neko_singleitem="true" data-neko_pagination="true" data-neko_transitionstyle="backSlide">
+
+									<article class="boxTestimonial">
+
+										<div class="clientIcon">
+											<img src="images\clients\client1.jpg" alt="client" class="img-circle imgborder">	
+										</div>
+										<blockquote>
+											The templates you made look wonderful and have a wide range of options. Thanks for writing such comprehensive templates.
+											<span><strong>Lady Gaga</strong>— art director</span>
+										</blockquote>
+										
+									</article>
+
+									<article class="boxTestimonial">
+
+										<div class="clientIcon">
+											<img src="images\clients\client2.jpg" alt="client" class="img-circle imgborder">
+										</div>
+										<blockquote>
+										Little-Neko are very fast at answering question about tech issues like why does not google map javascript api work correctly. Very service minded company.
+											<span><strong>Bill Gates</strong>— Happy client</span>
+										</blockquote>
+										
+									</article>
+
+									<article class="boxTestimonial">
+
+										<div class="clientIcon">
+											<img src="images\clients\client3.jpg" alt="client" class="img-circle imgborder">
+										</div>
+										<blockquote>
+											Every man has his technique, and they are all different. When you know mine you'll be dead.
+											<span><strong>Patrick Michael</strong>— Kung Fu Master</span>
+
+										</blockquote>
+										
+									</article>
+
+								</section>
+
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<!-- logos -->
+				<section id="logos" class="color1 pt30 pb30">
+
+					<div class="container">
+						<div class="row mb15">
+
+							<div class="col-md-3 col-xs-6">
+								<img src="images\clients\logo1.png" class="img-responsive imgBorder" alt="clients">	
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<img src="images\clients\logo2.png" class="img-responsive imgBorder" alt="clients">	
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<img src="images\clients\logo3.png" class="img-responsive imgBorder" alt="clients">	
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<img src="images\clients\logo4.png" class="img-responsive imgBorder" alt="clients">	
+							</div>
+						</div>
+
+						<div class="row">
+
+							<div class="col-md-3 col-xs-6">
+								<img src="images\clients\logo5.png" class="img-responsive imgBorder" alt="clients">	
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<img src="images\clients\logo6.png" class="img-responsive imgBorder" alt="clients">	
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<img src="images\clients\logo1.png" class="img-responsive imgBorder" alt="clients">	
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<img src="images\clients\logo2.png" class="img-responsive imgBorder" alt="clients">	
+							</div>
+
+						</div>
+					</div>
+
+				</section>
+				<!-- logos -->
+
 			</section>
 		</section>
 		<!-- content -->
@@ -373,7 +439,7 @@ $(document).ready( function() {
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="footerWidget">
-									<img src="images/neko-logo.png" alt="latest Little Neko news" id="footerLogo">
+									<img src="images\neko-logo.png" alt="latest Little Neko news" id="footerLogo">
 									<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Little Neko</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
 								</div>
 							</div>
@@ -381,14 +447,13 @@ $(document).ready( function() {
 							<div class="col-sm-3">
 								<div class="footerWidget">
 
-									<h3>Jeevika Academy</h3>
+									<h3>Little NEKO</h3>
 									<address>
 										<p>
-											<i class="icon-location"></i>&nbsp;#111, Trichy main Road<br>
-											Opp.Solai Mahal, Villupuram <br>
-											<i class="icon-phone"></i>&nbsp;+91 94-87-664083<br>
-											<i class="icon-phone"></i>&nbsp;+91 41-46-222083<br>
-											<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">contact@jeevikaacademy.com</a>
+											<i class="icon-location"></i>&nbsp;2001 Space Odyseey<br>
+											Houston, Texas - USA <br>
+											<i class="icon-phone"></i>&nbsp;256.478.3252 <br>
+											<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a>
 										</p>
 									</address>
 									</div>
@@ -426,20 +491,17 @@ $(document).ready( function() {
 		<!-- global wrapper -->
 <!-- End Document 
 	================================================== -->
-	<script type="text/javascript" src="js-plugin/respond/respond.js"></script>
-	<script type="text/javascript" src="js-plugin/jquery/jquery-1.10.2.js"></script>
-	<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.js"></script>
+	<script type="text/javascript" src="js-plugin\respond\respond.js"></script>
+	<script type="text/javascript" src="js-plugin\jquery\jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js-plugin\jquery-ui\jquery-ui-1.8.23.custom.js"></script>
 	<!-- third party plugins  -->
-	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.js"></script>
+	<script type="text/javascript" src="bootstrap\js\bootstrap.js"></script>
+	<script type="text/javascript" src="js-plugin\easing\jquery.easing.1.js"></script>
 	<!-- carousel -->
-	<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="js-plugin\owl.carousel\owl-carousel\owl.carousel.js"></script>
 	<!-- pop up -->
-	<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.js"></script>
-	<!-- form -->
-	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.js"></script>
-	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js-plugin\magnific-popup\jquery.magnific-popup.js"></script>
 	<!-- Custom  -->
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js\custom.js"></script>
 </body>
 </html>

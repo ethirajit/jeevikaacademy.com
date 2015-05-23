@@ -18,55 +18,32 @@
 <!-- CSS
 	================================================== -->
 	<!-- Bootstrap  -->
-	<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="bootstrap\css\bootstrap.css">
 	<!-- web font  -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
 	<!-- plugin css  -->
-	<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css">
+	<link rel="stylesheet" type="text/css" href="js-plugin\animation-framework\animate.css">
 	<!-- Pop up-->
-	<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="js-plugin\magnific-popup\magnific-popup.css">
 	<!-- Owl carousel-->
-	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.css">
-	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.css">
+	<link rel="stylesheet" href="js-plugin\owl.carousel\owl-carousel\owl.css">
+	<link rel="stylesheet" href="js-plugin\owl.carousel\owl-carousel\owl.css">
 	<!-- icon fonts -->
-	<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
-	<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+	<link type="text/css" rel="stylesheet" href="font-icons\custom-icons\css\custom-icons.css">
+	<link type="text/css" rel="stylesheet" href="font-icons\custom-icons\css\custom-icons-ie7.css">
 	<!-- Custom css -->
-	<link type="text/css" rel="stylesheet" href="css/layout.css">
-	<link type="text/css" id="colors" rel="stylesheet" href="css/colors.css">
-	<link type="text/css" rel="stylesheet" href="css/custom.css">
+	<link type="text/css" rel="stylesheet" href="css\layout.css">
+	<link type="text/css" id="colors" rel="stylesheet" href="css\colors.css">
+	<link type="text/css" rel="stylesheet" href="css\custom.css">
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-	<script src="js/modernizr-2.6.1.js"></script>
+	<script src="js\modernizr-2.6.1.js"></script>
 <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
-	<script>
-	$(document).on('change', '.btn-file :file', function() {
-  var input = $(this),
-      numFiles = input.get(0).files ? input.get(0).files.length : 1,
-      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-  input.trigger('fileselect', [numFiles, label]);
-});
-
-$(document).ready( function() {
-    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
-        
-        var input = $(this).parents('.input-group').find(':text'),
-            log = numFiles > 1 ? numFiles + ' files selected' : label;
-        
-        if( input.length ) {
-            input.val(log);
-        } else {
-            if( log ) alert(log);
-        }
-        
-    });
-});
-	</script>
+	<link rel="shortcut icon" href="images\favicon.ico">
+	<link rel="apple-touch-icon" href="images\apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images\apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images\apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images\apple-touch-icon-144x144.png">
 </head>
 <body>
 <!-- Primary Page Layout 
@@ -297,149 +274,173 @@ $(document).ready( function() {
 				<div class="container walkin">
 					<div class="row">
 						<div class="col-md-12">
-							<h1>Walk-in Registration</h1>
+							<h1>Software Development & Maintanance</h1>
+							<p>We're smart, we're yound, we're beautiful</p>
 						</div>
 					</div>
 				</div>
 			</header>
-			<section id="content" class="mt30">
-				<div class="container">
-					<div class="row">
-						<form method="post" action="js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
-							<div class="col-sm-4"> 
-								<div class="form-group">
-									<label for="name">Name</label>
-									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-								</div>
-								<div class="form-group">
-									<label for="email">Email ID</label>
-									<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-								</div>
-								<div class="form-group">
-									<label for="phone">Contact Number</label>
-									<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter email phone" title="Please enter a valid phone number (at least 10 characters)">
-								</div>
+			<section id="content" class="mt30 pb30">
+				<!-- team -->
+				<section id="team3" class="mt15">
+					
+					<div class="container">
+						<div class="row"> 
+							<div class="col-md-12 mb30">
+								<h2>Our team v3</h2>
+								<p>
+									Nullam sed tortor odio. Suspendisse tincidunt dictum nisi, nec convallis odio lacinia ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum auctor enim id lectus vehicula non iaculis mauris sollicitudin. Duis in ligula ligula, vel rutrum tortor. Nullam sed tortor odio. Suspendisse tincidunt dictum nisi, nec convallis odio lacinia ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+								</p>
+								
 							</div>
-							<div class="col-sm-4">
-								<div class="form-group">
-									<label for="name">Linked In</label>
-									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-								</div>
-								<div class="form-group">
-									<label for="name">IT Experience (In months)</label>
-									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-								</div>
-								<div class="form-group">
-									<label for="name">Upload Your Profile</label>
-									<div class="input-group">
-										<span class="input-group-btn">
-											<span class="btn btn-primary btn-file">
-												<i class="glyphicon glyphicon-folder-open"></i>
-												<input type="file" multiple>
-											</span>
-										</span>
-										<input type="text" class="form-control" readonly>
+							<div class="col-sm-3">
+								<article>
+									<div><img src="images\team\team-corporate-1.jpg" alt="" class="img-responsive"></div>
+									<div class="boxContent color2">
+										<h3>Software1</h3>
+										<p>Executive Director</p>
 									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="form-group">
-									<label for="comments">Comments</label>
-									<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-								</div>
-								<fieldset class="clearfix securityCheck">
-									<h3>Security</h3>
-									<div class="form-group">
-										<img src="js-plugin/neko-contact-ajax-plugin/php/image.php" alt="Image verification">
-										<input class="required form-control" id="verify" name="verify" type="text">
+									<div class="boxContent"> <a href="mailto:your.email@little-neko.com">j.doe@fat-catz.com</a>
+										<ul class="socialNetwork mt15">
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
+										</ul>
 									</div>
-								</fieldset>
-							</div>  							
-							<div class="col-md-8 col-md-offset-4">
-								<div class="result"></div>
-								<button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+								</article>
 							</div>
-						</form>
+							<div class="col-sm-3">
+								<article>
+									<div><img src="images\team\team-corporate-2.jpg" alt="" class="img-responsive"></div>
+									<div class="boxContent color2">
+										<h3>Software2</h3>
+										<p>Salesman</p>
+									</div>
+									<div class="boxContent"> <a href="mailto:your.email@little-neko.com">j.newsom@fat-catz.com</a>
+										<ul class="socialNetwork mt15">
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+										</ul>
+									</div>
+								</article>
+							</div>
+							<div class="col-sm-3">
+								<article>
+									<div><img src="images\team\team-corporate-3.jpg" alt="" class="img-responsive"></div>
+									<div class="boxContent color2">
+										<h3>Software3</h3>
+										<p>Graphic designer</p>
+									</div>
+									<div class="boxContent"> <a href="mailto:your.email@little-neko.com">a.doe@fat-catz.com</a>
+										<ul class="socialNetwork mt15">
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on YouTube"><i class="icon-youtube iconRounded"></i></a></li>
+										</ul>
+									</div>
+								</article>
+							</div>
+							<div class="col-sm-3">
+								<article>
+									<div><img src="images\team\team-corporate-4.jpg" alt="" class="img-responsive"></div>
+									<div class="boxContent color2">
+										<h3>Software4</h3>
+										<p>Programmer</p>
+									</div>
+									<div class="boxContent"> <a href="mailto:your.email@little-neko.com">p.anderson66@fat-catz.com</a>
+										<ul class="socialNetwork mt15">
+											<li> <a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a> </li>
+											<li> <a href="#" class="tips" title="" data-original-title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a> </li>
+											<li> <a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a> </li>
+											<li> <a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i> </a> </li>
+											<li> <a href="#" class="tips" title="" data-original-title="follow me on Flickr"><i class="icon-flickr iconRounded"></i> </a> </li>
+										</ul>
+									</div>
+								</article>
+							</div>
+						</div>
 					</div>
-				</div>
-				
+
+				</section>
 			</section>
 		</section>
 		<!-- content -->
 		<!-- footer -->
 		<footer id="footerWrapper">
 			<section id="mainFooter">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="footerWidget">
-									<img src="images/neko-logo.png" alt="latest Little Neko news" id="footerLogo">
-									<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Little Neko</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
-								</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footerWidget">
+								<img src="images\neko-logo.png" alt="latest Little Neko news" id="footerLogo">
+								<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Little Neko</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
 							</div>
+						</div>
 
-							<div class="col-sm-3">
-								<div class="footerWidget">
+						<div class="col-sm-3">
+							<div class="footerWidget">
 
-									<h3>Jeevika Academy</h3>
-									<address>
-										<p>
-											<i class="icon-location"></i>&nbsp;#111, Trichy main Road<br>
-											Opp.Solai Mahal, Villupuram <br>
-											<i class="icon-phone"></i>&nbsp;+91 94-87-664083<br>
-											<i class="icon-phone"></i>&nbsp;+91 41-46-222083<br>
-											<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">contact@jeevikaacademy.com</a>
-										</p>
-									</address>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="footerWidget">
-										<h3>Follow us, we are social</h3>
-										<ul class="socialNetwork">
+								<h3>Little NEKO</h3>
+								<address>
+									<p>
+										<i class="icon-location"></i>&nbsp;2001 Space Odyseey<br>
+										Houston, Texas - USA <br>
+										<i class="icon-phone"></i>&nbsp;256.478.3252 <br>
+										<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a>
+									</p>
+								</address>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="footerWidget">
+								<h3>Follow us, we are social</h3>
+								<ul class="socialNetwork">
 									<li><a href="#" class="tips" title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
 									<li><a href="#" class="tips" title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
 									<li><a href="#" class="tips" title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
 									<li><a href="#" class="tips" title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
 									<li><a href="#" class="tips" title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
 								</ul>     
-									</div>
-								</div>
-
 							</div>
 						</div>
-					</section>
 
-				<section id="footerRights">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<p>Copyright © 2012 <a href="http://www.little-neko.com" target="blank">Little NEKO</a> / All rights reserved.</p>
-							</div>
-
-						</div>
 					</div>
-				</section>
-			</footer>
-			<!-- End footer -->
-		</div>
-		<!-- global wrapper -->
+				</div>
+			</section>
+
+			<section id="footerRights">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Copyright © 2012 <a href="http://www.little-neko.com" target="blank">Little NEKO</a> / All rights reserved.</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</footer>
+		<!-- End footer -->
+	</div>
+	<!-- global wrapper -->
 <!-- End Document 
 	================================================== -->
-	<script type="text/javascript" src="js-plugin/respond/respond.js"></script>
-	<script type="text/javascript" src="js-plugin/jquery/jquery-1.10.2.js"></script>
-	<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.js"></script>
+	<script type="text/javascript" src="js-plugin\respond\respond.js"></script>
+	<script type="text/javascript" src="js-plugin\jquery\jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js-plugin\jquery-ui\jquery-ui-1.8.23.custom.js"></script>
 	<!-- third party plugins  -->
-	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.js"></script>
+	<script type="text/javascript" src="bootstrap\js\bootstrap.js"></script>
+	<script type="text/javascript" src="js-plugin\easing\jquery.easing.1.js"></script>
 	<!-- carousel -->
-	<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="js-plugin\owl.carousel\owl-carousel\owl.carousel.js"></script>
 	<!-- pop up -->
-	<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.js"></script>
-	<!-- form -->
-	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.js"></script>
-	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js-plugin\magnific-popup\jquery.magnific-popup.js"></script>
 	<!-- Custom  -->
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js\custom.js"></script>
 </body>
 </html>
